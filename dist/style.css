@@ -512,7 +512,7 @@ video {
     
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     .top-right {
         display: none;
 
@@ -538,6 +538,9 @@ video {
     .project-grid{
         grid-template-columns: repeat(3, 1fr);
     }
+    .navbar{
+        display: none;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -560,10 +563,8 @@ video {
         justify-content: center;
         align-items: center;
     }
-
-    .about-container>div {
-        /* width: 100%;  */
-    }
+    
+    
 
     .about-container>div p {
         margin: 1rem 0;
