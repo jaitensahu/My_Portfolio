@@ -20,6 +20,7 @@ a {
 html {
     scroll-behavior: smooth;
     --degree: 80deg;
+    overflow-x:hidden !important;
 }
 
 .navbar {
@@ -71,6 +72,7 @@ hr {
 }
 
 body {
+    overflow-x:hidden !important;
     /* background: linear-gradient(150deg, #3503BA , #07065b,#07065b, #07065b,#07065b,#07065b,#07065b,#07065b, #07065b,#07065b,#07065b,#03022c); */
 }
 
