@@ -5,6 +5,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
 
 h1,
 h2,
@@ -229,13 +242,15 @@ video {
     transform: translateY(0px);
 }
 
-.profile-text button, .contact-bottom form button {
+.profile-text button,
+.contact-bottom form button {
     margin-top: 30px;
     text-shadow: 2px 2px 5px #000000;
     background: linear-gradient(to right, #CD099E, #2DB1E1, #4020AC);
 }
 
-.profile-text button:hover, .contact-bottom form button:hover {
+.profile-text button:hover,
+.contact-bottom form button:hover {
     transform: scale(0.98);
     /* transition: 1s ease-in-out; */
     animation: 2s button alternate infinite;
@@ -308,7 +323,8 @@ video {
     filter: drop-shadow(0 0px 3px #6040ff);
 }
 
-.education h2, .skills h2 {
+.education h2,
+.skills h2 {
     filter: drop-shadow(0 0px 4px hsl(279, 91%, 62%));
 }
 
@@ -402,9 +418,10 @@ video {
     filter: drop-shadow(0 0px 4px hsl(281, 100%, 50%));
     padding: 2px 4px;
 }
-.projet-heading span:hover{
+
+.projet-heading span:hover {
     background: linear-gradient(to right, #e3469c, #2f0eb3);
-    
+
 }
 
 .project-grid {
@@ -487,16 +504,24 @@ video {
     filter: drop-shadow(0 0px 4px hsl(0, 0%, 100%));
 }
 
-.form form input,.form form textarea {
+.form form input,
+.form form textarea {
     border-radius: 5px;
     padding: 5px 10px;
     background: linear-gradient(to right, #fe75c0, #6342e9);
     border: 1px solid white;
+    color:white;
 }
-.form form input::placeholder, .form form textarea::placeholder {
-    color: #06054B;
+
+
+.form form input::placeholder,
+.form form textarea::placeholder {
+    /* color: #06054B; */
+    color:white;
 }
-.form form input:hover,.form form textarea:hover {
+
+.form form input:hover,
+.form form textarea:hover {
     /* cursor:pointer; */
 }
 
@@ -505,22 +530,31 @@ video {
     border-radius: 5px;
     height: 150px;
 }
-.contact-bottom form button{
+
+.contact-bottom form button {
     color: white;
     width: 150px;
     padding: 6px 0;
     border-radius: 5px;
 }
-.contact-bottom form input, .contact-bottom form textarea{
+
+.contact-bottom form input,
+.contact-bottom form textarea {
     outline-color: grey;
 }
 
-footer{
+footer {
     background-color: rgb(57, 51, 88);
 }
-footer p{
+
+footer p {
     /* padding: 10px 0; */
 }
+
+/* ::-webkit-scrollbar-thumb{
+    background: linear-gradient(red, blue);
+} */
+
 
 @media screen and (max-width:768px) {
     .home {
@@ -558,7 +592,7 @@ footer p{
 }
 
 @media screen and (max-width:1240px) {
-    
+
     .middle-container,
     .bottom-container {
         max-width: 1000px;
