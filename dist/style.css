@@ -82,11 +82,72 @@ hr {
     }
 }
 
+
 body {
     overflow-x: hidden !important;
-    /* background: linear-gradient(150deg, #3503BA , #07065b,#07065b, #07065b,#07065b,#07065b,#07065b,#07065b, #07065b,#07065b,#07065b,#03022c); */
 }
-
+.top-right{
+    z-index: 1000;
+    right: 0;
+}
+.onClickMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+.onClickMenu a i {
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0 0px 5px #e5008d);
+}
+.onClickMenu a i:hover {
+    filter: drop-shadow(4px 4px 5px #e5008d);
+    transform: scale(1.4);
+}
+.top-right label>i:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #CD099E, #4020AC);
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+}
+.top-right label>i{
+    position: relative;
+    z-index: 200;
+    transform: rotate(0deg);
+}
+.top-right input{
+    &:checked + label>i{
+        transform: rotate(405deg);
+        transition: 0.5s ease-in-out;
+        background: linear-gradient(to right, #CD099E, #4020AC);
+        color: white;
+        text-shadow: 2px 2px 5px #000000;
+    }
+    &:checked + label +.menuContainer>.onClickHome{
+        top:-35px;
+        visibility: visible;
+        transition-delay: 0.6s;
+        
+    }
+    &:checked + label +.menuContainer>.onClickAbout{
+        top:-20px;
+        right: 45px;
+        visibility: visible;
+        transition-delay: 0.4s;
+    }
+    &:checked + label +.menuContainer>.onClickProject{
+        top:20px;
+        right: 40px;
+        visibility: visible;
+        transition-delay: 0.2s;
+    }
+    &:checked + label +.menuContainer>.onClickContact{
+        top:40px;
+        visibility: visible;
+    }
+}
 .home {
     background: linear-gradient(150deg, #3503BA, #07065b, #06054B, #06054B);
 }
@@ -207,6 +268,25 @@ video {
     }
 
 }
+/* .frontendDev::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid red;
+    left: 0;
+    background-color: #06054B;
+    animation: typing 3s steps(17) forwards;
+}
+@keyframes typing {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 67%;
+    }
+} */
+
 
 .name>div>span,
 .middle>div>p {
