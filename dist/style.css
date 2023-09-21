@@ -116,6 +116,7 @@ body {
     position: relative;
     z-index: 200;
     transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
 }
 .top-right input{
     &:checked + label>i{
