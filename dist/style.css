@@ -359,7 +359,6 @@ video {
 
 .about-container {
     background-color: rgb(57, 51, 88);
-    /* background: linear-gradient( #06054B ,#59404e); */
 }
 
 .about-container2 {
@@ -590,10 +589,13 @@ video {
     border-radius: 5px;
     padding: 5px 10px;
     background: linear-gradient(to right, #fe75c0, #6342e9);
-    border: 1px solid white;
+    border: 1px solid black;
     color:white;
 }
-
+.form form input:hover,
+.form form textarea:hover {
+    border: 1px solid white;
+}
 
 .form form input::placeholder,
 .form form textarea::placeholder {
